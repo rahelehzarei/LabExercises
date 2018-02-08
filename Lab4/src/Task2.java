@@ -23,12 +23,19 @@ public class Task2 {
 				.flatMap(num1 -> numbers2.stream()
 						.map(num2 -> Arrays.asList(num1, num2))).collect(Collectors.toList());
 		
+		System.out.println("Task 2.2:");
+		System.out.println(pairs);
+		
 		// 2.3 - All pairs where only divisible by 3
+		// Stream<List<T>> -> flatMap -> Stream<T>
 		List<List<Integer>> pairsDivBy3 = numbers1.stream()
 				.flatMap(num1 -> numbers2.stream()
 						.map(num2 -> Arrays.asList(num1, num2)))
 				.filter(pair -> pair.stream().reduce(0, Integer::sum) % 3 == 0 )
 				.collect(Collectors.toList());
+		
+		System.out.println("Task 2.3:");
+		System.out.println(pairsDivBy3);
 		
 	}
 	

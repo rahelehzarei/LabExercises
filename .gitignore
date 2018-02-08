@@ -1,7 +1,7 @@
 RemoteSystemsTempFiles/
 
-.classpath
-.project
+
+.DS_Store
 .metadata
 bin/
 tmp/

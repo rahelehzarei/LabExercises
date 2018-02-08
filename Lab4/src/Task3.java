@@ -54,7 +54,7 @@ public class Task3{
         System.out.println(traders);
         
         
-        // Query 4: Return a string of all traders’ names sorted alphabetically.
+        // Query 4: Return a string of all tradersï¿½ names sorted alphabetically.
         
         String traderStr = 
             transactions.stream()
@@ -113,7 +113,7 @@ public class Task3{
     }
     
     private static long getLowercaseCharsCount(String inputString) {
-    	return inputString.chars().mapToObj(c -> (char)c).filter(c -> Character.isLowerCase(c)).count();
+		return inputString.chars().mapToObj(c -> (char)c).filter(c -> Character.isLowerCase(c)).count();
     }
     
     

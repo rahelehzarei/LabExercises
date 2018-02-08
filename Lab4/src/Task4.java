@@ -7,6 +7,7 @@ public class Task4 {
 		System.out.println("Task 4");
 		System.out.println("--------------------");
 		
+		// UnaryOperator<T> -> Takes a T as argument and returns a T
 		Stream.iterate(new int[]{0, 1}, fibElements -> {
 			int temp = fibElements[0];
 			fibElements[0] = fibElements[1];
