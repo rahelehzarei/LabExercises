@@ -110,13 +110,7 @@ public class Task3{
         System.out.println("Query 9:");
         System.out.println(city);
 
-        // Query 10 - Find city that has largest number of lowercase characters
-        Optional<String> CitiesLNoLowC = transactions.stream()
-                .max(Comparator.comparingLong(f -> f.getTrader().getCity().chars().mapToObj(i -> (char) i)
-                        .filter(Character::isLowerCase).count()))
-                .map(transaction -> transaction.getTrader().getCity());
-        System.out.println("city String with the largest number of lowercase letters from all the cities in the transaction list");
-        System.out.println(CitiesLNoLowC);
+        //My Test for git
         
     }
     
